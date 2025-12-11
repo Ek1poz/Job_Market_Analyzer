@@ -108,5 +108,8 @@ Top Jobs: Bar chart of the most popular positions.
 
 ## Author
 ```
-Student Name Faculty of Computer Science
+Sventukh Oleksandr
+Lviv Politechnic
+System Analysis
+
 ```
