@@ -17,19 +17,27 @@ class JobAnalyzer:
 
         Raises:
             FileNotFoundError: If the CSV file does not exist.
+            ValueError: If the CSV file is missing required columns.
         """
         try:
             self.df = pd.read_csv(csv_path)
             self._standardize_columns()
             
+
             required_cols = ['job_title', 'salary_in_usd', 'experience_level']
             
             missing = [c for c in required_cols if c not in self.df.columns]
-            if not missing:
-                self.df.dropna(subset=required_cols, inplace=True)
-                self.df['salary_in_usd'] = pd.to_numeric(self.df['salary_in_usd'], errors='coerce')
+            
+ 
+            if missing:
+
+                raise ValueError(f"CSV file is invalid. Missing required columns: {missing}")
+            
+            self.df.dropna(subset=required_cols, inplace=True)
+            self.df['salary_in_usd'] = pd.to_numeric(self.df['salary_in_usd'], errors='coerce')
             
         except FileNotFoundError:
+
             raise FileNotFoundError(f"File {csv_path} not found.")
 
     def _standardize_columns(self):
