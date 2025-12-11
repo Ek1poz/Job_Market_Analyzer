@@ -1,4 +1,13 @@
+## Author
+```
+Sventukh Oleksandr
+Sheviak Maxym
 
+Lviv Politechnic
+System Analysis
+Special Programing Languages
+
+```
 # Job Market Analyzer 
 
 **Job Market Analyzer** is a Python library designed to analyze and visualize job market trends based on CSV data. It processes job titles and salaries to provide key financial insights and visual statistics.
@@ -106,12 +115,6 @@ Top Jobs: Bar chart of the most popular positions.
 
 
 
-## Author
-```
-Sventukh Oleksandr
-Sheviak Maxym
-Lviv Politechnic
-System Analysis
 
-```
+
 
