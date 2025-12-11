@@ -109,7 +109,9 @@ Top Jobs: Bar chart of the most popular positions.
 ## Author
 ```
 Sventukh Oleksandr
+Sheviak Maxym
 Lviv Politechnic
 System Analysis
 
 ```
+
