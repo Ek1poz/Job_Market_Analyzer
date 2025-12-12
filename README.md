@@ -79,20 +79,40 @@ Python
 filename = 'ds_salaries.csv'
 analyzer = JobAnalyzer(filename)
 
-# Get statistics (Average, Min, Max, Median)
-stats = analyzer.get_salary_stats()
-# Display stats dataframe
-3. Visualize Data
-Python
+# --- Basic Statistics ---
+# Get general salary statistics (Min, Max, Avg, Median)
+analyzer.get_salary_stats_table()
+
+# Get Top-5 popular jobs
+analyzer.get_top_professions_table(5)
+
+
+# --- Career Insights ---
+
+# 1. Find the highest paid job record in the dataset
+analyzer.get_richest_job()
+
+# 2. Analyze salary growth by experience for a specific job (e.g., Data Scientist)
+analyzer.get_salary_growth_for_job('Data Scientist')
+
+# 3. View average salary by experience level for the whole market
+analyzer.get_experience_stats_table()
+
 
 # Initialize visualizer with the processed data
 viz = JobVisualizer(analyzer.get_data())
 
-# Plot Salary Distribution Histogram
+# 1. Salary Distribution (Histogram)
 viz.plot_salary_distribution()
 
-# Plot Top Job Titles Bar Chart
+# 2. Top Job Titles (Bar Chart)
 viz.plot_top_jobs(10)
+
+# 3. Salary Ranges for Top Professions (Boxplot)
+viz.plot_salary_by_job(10)
+
+# 4. Salary vs Experience Level (Junior to Executive)
+viz.plot_experience_salaries()
 ```
 
 
@@ -112,6 +132,7 @@ Salary Distribution: Histogram with Kernel Density Estimate (KDE).
 
 Top Jobs: Bar chart of the most popular positions.
 ```
+
 
 
 
