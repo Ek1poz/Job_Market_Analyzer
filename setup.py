@@ -9,6 +9,7 @@ setup(
         "matplotlib",
         "seaborn"
     ],
-    author="Student Name",
+    author="Oleksandr Sventukh, Maxym Sheviak",
     description="Tool for analyzing job market data"
+
 )
