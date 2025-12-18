@@ -1,7 +1,7 @@
 ## Author
 ```
 Sventukh Oleksandr
-Sheviak Maxym
+Sheviak Maksym
 
 Lviv Politechnic
 System Analysis
@@ -132,6 +132,7 @@ Salary Distribution: Histogram with Kernel Density Estimate (KDE).
 
 Top Jobs: Bar chart of the most popular positions.
 ```
+
 
 
 
